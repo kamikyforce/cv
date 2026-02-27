@@ -402,3 +402,317 @@ footer {
         display: none;
     }
 }
+
+.landing {
+    --bg-color: #0b1220;
+    --card-bg: #0f1b2d;
+    --text-color: #e5e7eb;
+    --heading-color: #f8fafc;
+    --subheading-color: #c7d0da;
+    --border-color: #1c2a3d;
+    --primary-color: #3b82f6;
+    --secondary-color: #60a5fa;
+    --accent-color: #f59e0b;
+}
+
+.landing {
+    max-width: 100%;
+    padding: 0;
+    background: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.landing .lp-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.landing .lp-hero {
+    background: linear-gradient(135deg, #0b1220 0%, #0f1b2d 55%, #091425 100%);
+    padding: 80px 0 60px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.landing .lp-brand {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.landing .lp-brand-text {
+    max-width: 68ch;
+}
+
+.landing .lp-title {
+    font-size: clamp(1.9rem, 2.2vw + 1rem, 3rem);
+    line-height: 1.2;
+    color: #ffffff;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    margin-bottom: 16px;
+}
+
+.landing .lp-subtitle {
+    font-size: clamp(1rem, 0.6vw + 0.9rem, 1.25rem);
+    color: var(--text-color);
+    margin-bottom: 26px;
+}
+
+.landing .lp-author {
+    margin-top: 14px;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.landing .lp-cta-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 560px;
+}
+
+.landing .lp-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 28px;
+    border-radius: 10px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    text-decoration: none;
+    border: none;
+    transition: transform .08s ease, box-shadow .2s ease, background-color .2s ease;
+}
+
+.landing .lp-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 20px rgba(2,132,199,0.15);
+}
+
+.landing .lp-btn:active {
+    transform: translateY(0);
+}
+
+.landing .lp-btn:focus-visible {
+    outline: 3px solid #93c5fd;
+    outline-offset: 2px;
+}
+
+.landing .lp-btn-primary {
+    background: var(--primary-color);
+    color: #ffffff;
+}
+
+.landing .lp-btn-gradient {
+    background: linear-gradient(90deg, #0ea5e9 0%, #2563eb 60%, #1d4ed8 100%);
+    color: #ffffff;
+}
+
+.landing .lp-btn-secondary {
+    background: #1d4ed8;
+    color: #ffffff;
+}
+
+.landing .lp-btn-lg {
+    font-size: 1rem;
+}
+
+.landing .lp-btn-xl {
+    font-size: 1.15rem;
+    padding: 18px 34px;
+}
+
+.landing .lp-section {
+    padding: 56px 0;
+}
+
+.landing .lp-h2 {
+    font-size: clamp(1.4rem, 1vw + 1.1rem, 2rem);
+    color: var(--heading-color);
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.landing .lp-strong {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 6px 0 14px 0;
+}
+
+.landing .lp-blue {
+    color: var(--secondary-color);
+}
+
+.landing .lp-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0 0 14px 0;
+    max-width: 68ch;
+}
+
+.landing .lp-list li {
+    position: relative;
+    padding: 10px 12px 10px 36px;
+    margin: 8px 0;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    background: var(--card-bg);
+}
+
+.landing .lp-list li::before {
+    content: "•";
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--secondary-color);
+    font-weight: 900;
+}
+
+.landing .lp-note {
+    margin-top: 16px;
+    color: var(--subheading-color);
+    max-width: 68ch;
+}
+
+.landing .lp-paragraph {
+    font-size: clamp(1rem, 0.5vw + 0.85rem, 1.1rem);
+    color: var(--subheading-color);
+    margin-bottom: 20px;
+    max-width: 68ch;
+}
+
+.landing .lp-highlights {
+    list-style: none;
+    padding: 0;
+    margin: 8px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 720px;
+}
+
+.landing .lp-highlights li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #f3f6fb;
+    font-weight: 700;
+}
+
+.landing .lp-highlights li::before {
+    content: "✓";
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    border-radius: 999px;
+    background: #2563eb;
+    color: #ffffff;
+    font-size: 14px;
+    flex: 0 0 22px;
+}
+
+.landing .lp-benefits {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 14px;
+    margin: 18px 0 26px 0;
+}
+
+.landing .lp-benefit {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 14px 16px;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.landing .lp-center {
+    text-align: center;
+}
+
+.landing .lp-alt {
+    background: linear-gradient(180deg, rgba(29,46,72,0.35) 0%, rgba(11,18,32,0.35) 100%);
+    border-top: 1px solid #142235;
+    border-bottom: 1px solid #142235;
+}
+
+.landing .lp-final .lp-sub {
+    color: var(--subheading-color);
+    margin-bottom: 18px;
+    text-align: center;
+}
+
+.landing .lp-final {
+    text-align: center;
+}
+
+.landing .lp-final .lp-h2 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.landing .lp-contact {
+    text-align: center;
+    color: var(--subheading-color);
+    font-size: 0.95rem;
+    opacity: 0.9;
+    margin-top: 10px;
+}
+
+/* neutraliza ajuste do inspecionador do navegador Trae no preview */
+.landing .trae-browser-inspect-draggable {
+    position: static !important;
+    transform: none !important;
+    left: auto !important;
+    top: auto !important;
+}
+
+@media (max-width: 768px) {
+    .landing .lp-brand {
+        align-items: center;
+        text-align: center;
+    }
+    .landing .lp-title {
+        font-size: 1.9rem;
+    }
+    .landing .lp-subtitle {
+        font-size: 1.05rem;
+    }
+    .landing .lp-btn-xl {
+        font-size: 1.05rem;
+        padding: 16px 26px;
+    }
+    .landing .lp-btn {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .landing .lp-hero {
+        padding: 96px 0 72px;
+    }
+    .landing .lp-cta-group {
+        flex-direction: row;
+        gap: 12px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .landing .lp-btn,
+    .job,
+    section {
+        transition: none;
+    }
+}
